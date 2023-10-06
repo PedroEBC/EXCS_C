@@ -1,0 +1,17 @@
+10.
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+    double x = Double.Parse(Console.ReadLine());
+        for(var i=1; i<=x; i++){
+            if((i % 2) != 0){
+                Console.WriteLine(i);
+            }
+        }
+
+    }
+
+}
