@@ -1,0 +1,26 @@
+3.
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string[] input1 = Console.ReadLine().Split(' ');
+        int product1Code = int.Parse(input1[0]);
+        int product1Units = int.Parse(input1[1]);
+        double product1Price = double.Parse(input1[2]);
+
+        // Read input for product 2
+        string[] input2 = Console.ReadLine().Split(' ');
+        int product2Code = int.Parse(input2[0]);
+        int product2Units = int.Parse(input2[1]);
+        double product2Price = double.Parse(input2[2]);
+
+        // Calculate the total amount
+        double totalAmount = (product1Units * product1Price) + (product2Units * product2Price);
+
+        // Print the output
+        Console.WriteLine($"VALOR A PAGAR: R$ {totalAmount:F2}");
+    }
+
+}
