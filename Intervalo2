@@ -1,0 +1,24 @@
+12.
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+    int contin = 0;
+    int contout = 0;
+    var N = Convert.ToInt32(Console.ReadLine());
+    for (var i=0; i<N;i++){
+        var X = Convert.ToInt32(Console.ReadLine());
+        if(X >=10 && X <= 20){
+            contin++;
+        }
+        else{
+            contout++;
+        }
+    }
+    Console.WriteLine(contin + " in");
+    Console.WriteLine(contout + " out");
+  }
+
+}
