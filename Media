@@ -1,0 +1,18 @@
+2.
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       var A = (Convert.ToDouble(Console.ReadLine()))*0.2;
+       var B = (Convert.ToDouble(Console.ReadLine()))*0.3;
+       var C = (Convert.ToDouble(Console.ReadLine()))*0.5;
+       var a = A+B+C;
+       
+       String media = String.Format("MEDIA = {0:N1}",a);
+       Console.WriteLine(media);
+
+    }
+
+}
